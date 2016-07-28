@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink(" ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand img-logo" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="body-content">
+        @RenderBody()
+        <br />
+        <footer class="color-menu-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 margin30">
+                        <div class="footer-col">
+                            <h3>About</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.
+                            </p>
+                            <ul class="list-inline social-1">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 margin30">
+                        <div class="footer-col">
+                            <h3>Contact</h3>
+
+                            <ul class="list-unstyled contact">
+                                <li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> Cra 52 # 162 -58</p></li>
+                                <li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">jmartinez@hotmail.com</a></p></li>
+                                <li> <p><strong><i class="fa fa-phone"></i> Phone:</strong> +51 318 390 0874</p></li>
+                                <li> <p><strong><i class="fa fa-print"></i> Fax</strong> 318 390 0874</p></li>
+                                <li> <p><strong><i class="fa fa-skype"></i> Skype</strong> jonathan.martinez77</p></li>
+
+                            </ul>
+                        </div>
+                    </div><!--footer col-->
+                    <div class="col-md-3 col-sm-6 margin30">
+                        <div class="footer-col">
+                            <h3>Featured Work</h3>
+                            <ul class="list-inline f2-work">
+                                <li><a href="portfolio-single.html"><img src="#" class="img-responsive" alt=""></a></li>
+                                <li><a href="portfolio-single.html"><img src="#" class="img-responsive" alt=""></a></li>
+                                <li><a href="portfolio-single.html"><img src="#" class="img-responsive" alt=""></a></li>
+                                <li><a href="portfolio-single.html"><img src="#" class="img-responsive" alt=""></a></li>
+                                <li><a href="portfolio-single.html"><img src="#" class="img-responsive" alt=""></a></li>
+                                <li><a href="portfolio-single.html"><img src="#" class="img-responsive" alt=""></a></li>
+                                <li><a href="portfolio-single.html"><img src="#" class="img-responsive" alt=""></a></li>
+                                <li><a href="portfolio-single.html"><img src="#" class="img-responsive" alt=""></a></li>
+                                <li><a href="portfolio-single.html"><img src="#" class="img-responsive" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div><!--footer col-->
+                    <div class="col-md-3 col-sm-6 margin30">
+                        <div class="footer-col">
+                            <h3>Newsletter</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam,
+                            </p>
+                            <form role="form" class="subscribe-form">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Enter email to subscribe">
+                                    <span class="input-group-btn">
+
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="footer-btm">
+                            <span>&copy;2016 Design by Jonathan Martinez Rodriguez</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

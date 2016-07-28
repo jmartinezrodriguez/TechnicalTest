@@ -1,0 +1,84 @@
+﻿<form id="form_product" class="form-horizontal" role="form">
+    <div class="form-group">
+        <label class="control-label col-sm-2">Product Name:</label>
+        <div class="col-sm-4">
+            <input id="product_name" name="product_name" type="text" class="form-control" placeholder="Enter name" data-bind="value: Name, valueUpdate: 'afterkeydown'">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Product Number:</label>
+        <div class="col-sm-10">
+            <input id="search_parameter" name="search_parameter" type="text" class="form-control" placeholder="Enter number" data-bind="value: ProductNumber, valueUpdate: 'afterkeydown'">
+            <span id="message_search" class="label label-info hide-element">Type product number to search</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Color:</label>
+        <div class="col-sm-10">
+            <input id="color" name="color" type="text" class="form-control" placeholder="Enter color" data-bind="value: Color, valueUpdate: 'afterkeydown'">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Standard Cost:</label>
+        <div class="col-sm-10">
+            <input id="standard_cost" name="standard_cost" type="text" class="form-control" placeholder="Enter cost" data-bind="value: StandardCost, valueUpdate: 'afterkeydown'">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">List Price:</label>
+        <div class="col-sm-10">
+            <input id="list_price" name="list_price" type="text" class="form-control" placeholder="Enter price" data-bind="value: ListPrice, valueUpdate: 'afterkeydown'">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Size:</label>
+        <div class="col-sm-10">
+            <input id="size" name="size" type="text" class="form-control" placeholder="Enter size" data-bind="value: Size, valueUpdate: 'afterkeydown'">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Weight:</label>
+        <div class="col-sm-10">
+            <input id="weight" name="weight" type="text" class="form-control" placeholder="Enter weight" data-bind="value: Weight, valueUpdate: 'afterkeydown'">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-2">Product Category:</label>
+        <div class="col-sm-10">
+            <select id="DropDownlist_Product_Category" name="DropDownlist_Product_Category" class="form-control  input-large" data-bind="options: ProductCategorys, optionsText: 'Name', optionsValue: 'ProductCategoryID', optionsCaption: 'Select...', value: $root.ProductCategoryID"></select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Product Model:</label>
+        <div class="col-sm-10">
+            <select id="DropDownlist_Product_Model" name="DropDownlist_Product_Model" class="form-control  input-large" data-bind="options: ProductModels, optionsText: 'Name', optionsValue: 'ProductModelID', optionsCaption: 'Select...', value: $root.ProductModelID"></select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Sell Start Date:</label>
+        <div class="col-sm-10">
+            <input class="input-datepicker" id="start_date" name="start_date" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Sell End Date:</label>
+        <div class="col-sm-10">
+            <input class="input-datepicker" id="end_date" name="end_date" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Discontinued Date:</label>
+        <div class="col-sm-10">
+            <input class="input-datepicker" id="dis_date" name="dis_date" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button id="btn_save" type="button" class="btn btn-success" data-bind="event: { click: SaveProduct }">Submit</button>
+            <button id="btn_search" type="button" class="btn btn-warning hide-element" data-bind="event: { click: SearchProductById }">Search</button>
+            <button id="btn_edit" type="button" class="btn btn-primary hide-element" data-bind="event: { click: EditProduct }">Edit</button>
+            <button id="btn_update" type="button" class="btn btn-success hide-element" data-bind="event: { click: UpdateProduct }">Update</button>
+        </div>
+    </div>
+</form>

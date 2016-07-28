@@ -1,0 +1,29 @@
+﻿<div id="scope_product">
+    <div class="row">
+        <div class="col-md-12">
+            <img src="~/Content/img/bg-4.jpg" class="img-responsive" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#" data-bind="event: { click: GetProductById }">Search product by Id</a></li>
+                <li><a href="#" data-bind="event: { click: CreateNewProduct }">Create new Product</a></li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            @Html.Partial("~/Views/Product/Products.cshtml")
+        </div>
+        <div id="form_new_product" class="col-md-9 hide-element">
+            @Html.Partial("~/Views/Product/CreateProduct.cshtml")
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/product")
+    <script type="text/javascript">
+        App.Application.Product.ProductViewModel.GetView();
+    </script>
+}

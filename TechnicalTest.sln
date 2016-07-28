@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnicalTest.BusinessLayer", "TechnicalTest.BusinessLayer\TechnicalTest.BusinessLayer.csproj", "{0A811F4C-31E7-4882-924F-EBE8BB6A227E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnicalTest.CrossLayer", "TechnicalTest.CrossLayer\TechnicalTest.CrossLayer.csproj", "{C6BF340A-008F-4554-BE99-59E122DA710F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnicalTest.DataLayer", "TechnicalTest.DataLayer\TechnicalTest.DataLayer.csproj", "{055EF525-6154-45E2-815B-757249F1B4A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnicalTest.ServiceLayer", "TechnicalTest.ServiceLayer\TechnicalTest.ServiceLayer.csproj", "{0D0936B0-9C20-4CE7-9BF8-752F37C821A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnicalTest.Web", "TechnicalTest.Web\TechnicalTest.Web.csproj", "{B3A4E5DE-279F-4C0D-888D-ECA6EFD9214B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A811F4C-31E7-4882-924F-EBE8BB6A227E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A811F4C-31E7-4882-924F-EBE8BB6A227E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A811F4C-31E7-4882-924F-EBE8BB6A227E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A811F4C-31E7-4882-924F-EBE8BB6A227E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6BF340A-008F-4554-BE99-59E122DA710F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6BF340A-008F-4554-BE99-59E122DA710F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6BF340A-008F-4554-BE99-59E122DA710F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6BF340A-008F-4554-BE99-59E122DA710F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{055EF525-6154-45E2-815B-757249F1B4A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055EF525-6154-45E2-815B-757249F1B4A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055EF525-6154-45E2-815B-757249F1B4A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055EF525-6154-45E2-815B-757249F1B4A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D0936B0-9C20-4CE7-9BF8-752F37C821A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D0936B0-9C20-4CE7-9BF8-752F37C821A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D0936B0-9C20-4CE7-9BF8-752F37C821A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D0936B0-9C20-4CE7-9BF8-752F37C821A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3A4E5DE-279F-4C0D-888D-ECA6EFD9214B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A4E5DE-279F-4C0D-888D-ECA6EFD9214B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A4E5DE-279F-4C0D-888D-ECA6EFD9214B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A4E5DE-279F-4C0D-888D-ECA6EFD9214B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://fenixco.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TechnicalTest.BusinessLayer\\TechnicalTest.BusinessLayer.csproj
+		SccProjectName1 = TechnicalTest.BusinessLayer
+		SccLocalPath1 = TechnicalTest.BusinessLayer
+		SccProjectUniqueName2 = TechnicalTest.CrossLayer\\TechnicalTest.CrossLayer.csproj
+		SccProjectName2 = TechnicalTest.CrossLayer
+		SccLocalPath2 = TechnicalTest.CrossLayer
+		SccProjectUniqueName3 = TechnicalTest.DataLayer\\TechnicalTest.DataLayer.csproj
+		SccProjectName3 = TechnicalTest.DataLayer
+		SccLocalPath3 = TechnicalTest.DataLayer
+		SccProjectUniqueName4 = TechnicalTest.ServiceLayer\\TechnicalTest.ServiceLayer.csproj
+		SccProjectName4 = TechnicalTest.ServiceLayer
+		SccLocalPath4 = TechnicalTest.ServiceLayer
+		SccProjectUniqueName5 = TechnicalTest.Web\\TechnicalTest.Web.csproj
+		SccProjectName5 = TechnicalTest.Web
+		SccLocalPath5 = TechnicalTest.Web
+	EndGlobalSection
+EndGlobal
